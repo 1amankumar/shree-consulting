@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -16,8 +16,9 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-primary-foreground/10">
       <div className="container px-4 md:px-6">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="font-heading font-bold text-xl text-primary-foreground">
-            YourCompany
+          <Link to="/" className="flex items-center gap-2 font-heading font-bold text-xl text-primary-foreground">
+            <Building2 className="h-6 w-6" />
+            Shree Consulting
           </Link>
 
           {/* Desktop Navigation */}
